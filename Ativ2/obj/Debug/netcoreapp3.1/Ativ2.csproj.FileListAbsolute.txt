@@ -1,0 +1,13 @@
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\bin\Debug\netcoreapp3.1\Ativ2.exe
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\bin\Debug\netcoreapp3.1\Ativ2.deps.json
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\bin\Debug\netcoreapp3.1\Ativ2.runtimeconfig.json
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\bin\Debug\netcoreapp3.1\Ativ2.runtimeconfig.dev.json
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\bin\Debug\netcoreapp3.1\Ativ2.dll
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\bin\Debug\netcoreapp3.1\Ativ2.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.csprojAssemblyReference.cache
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.AssemblyInfoInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.AssemblyInfo.cs
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.csproj.CoreCompileInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.dll
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.1\Ativ2\obj\Debug\netcoreapp3.1\Ativ2.genruntimeconfig.cache

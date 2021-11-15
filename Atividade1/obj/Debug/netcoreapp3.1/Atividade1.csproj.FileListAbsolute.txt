@@ -1,0 +1,13 @@
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\bin\Debug\netcoreapp3.1\Atividade1.exe
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\bin\Debug\netcoreapp3.1\Atividade1.deps.json
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\bin\Debug\netcoreapp3.1\Atividade1.runtimeconfig.json
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\bin\Debug\netcoreapp3.1\Atividade1.runtimeconfig.dev.json
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\bin\Debug\netcoreapp3.1\Atividade1.dll
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\bin\Debug\netcoreapp3.1\Atividade1.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.csprojAssemblyReference.cache
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.AssemblyInfoInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.AssemblyInfo.cs
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.csproj.CoreCompileInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.dll
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.1\Atividade1\obj\Debug\netcoreapp3.1\Atividade1.genruntimeconfig.cache
