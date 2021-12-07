@@ -1,0 +1,13 @@
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\bin\Debug\netcoreapp3.1\Exercicios.exe
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\bin\Debug\netcoreapp3.1\Exercicios.deps.json
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\bin\Debug\netcoreapp3.1\Exercicios.runtimeconfig.json
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\bin\Debug\netcoreapp3.1\Exercicios.runtimeconfig.dev.json
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\bin\Debug\netcoreapp3.1\Exercicios.dll
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\bin\Debug\netcoreapp3.1\Exercicios.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.csprojAssemblyReference.cache
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.AssemblyInfoInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.AssemblyInfo.cs
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.csproj.CoreCompileInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.dll
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\exercicio1\obj\Debug\netcoreapp3.1\Exercicios.genruntimeconfig.cache

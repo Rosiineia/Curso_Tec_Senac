@@ -1,0 +1,13 @@
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\bin\Debug\netcoreapp3.1\MomentoOnline25.11.exe
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\bin\Debug\netcoreapp3.1\MomentoOnline25.11.deps.json
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\bin\Debug\netcoreapp3.1\MomentoOnline25.11.runtimeconfig.json
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\bin\Debug\netcoreapp3.1\MomentoOnline25.11.runtimeconfig.dev.json
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\bin\Debug\netcoreapp3.1\MomentoOnline25.11.dll
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\bin\Debug\netcoreapp3.1\MomentoOnline25.11.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.csprojAssemblyReference.cache
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.AssemblyInfoInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.AssemblyInfo.cs
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.csproj.CoreCompileInputs.cache
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.dll
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.pdb
+D:\CURSO TECNICO - SENAC\MODULO A.2\Exercicios\MomentoOnline25.11\obj\Debug\netcoreapp3.1\MomentoOnline25.11.genruntimeconfig.cache
