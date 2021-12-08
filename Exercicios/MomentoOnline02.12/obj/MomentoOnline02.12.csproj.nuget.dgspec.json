@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CURSO TECNICO - SENAC\\MODULO A.2\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj": {}
+    "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj": {}
   },
   "projects": {
-    "D:\\CURSO TECNICO - SENAC\\MODULO A.2\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj": {
+    "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\MODULO A.2\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj",
+        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj",
         "projectName": "MomentoOnline02.12",
-        "projectPath": "D:\\CURSO TECNICO - SENAC\\MODULO A.2\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj",
+        "projectPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Exercicios\\MomentoOnline02.12\\MomentoOnline02.12.csproj",
         "packagesPath": "C:\\Users\\Rosy\\.nuget\\packages\\",
-        "outputPath": "D:\\CURSO TECNICO - SENAC\\MODULO A.2\\Exercicios\\MomentoOnline02.12\\obj\\",
+        "outputPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Exercicios\\MomentoOnline02.12\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rosy\\AppData\\Roaming\\NuGet\\NuGet.Config"
