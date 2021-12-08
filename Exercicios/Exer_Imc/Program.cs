@@ -7,6 +7,7 @@ namespace Exer_Imc
         static void Main(string[] args)
         {
             char continua = 'S';
+            Atendimento atender = new Atendimento();// Lista de antendimento
 
             do
             {
@@ -23,14 +24,21 @@ namespace Exer_Imc
                 Console.WriteLine("Informe altura do paciente: ");
                 paciente.alturaPublico = double.Parse(Console.ReadLine());
 
+                atender.adicionar(paciente);// Adicioando dados do paceinte na lista
 
-                Console.WriteLine(" Atenção: IMC é: " + paciente.calcularImc());
+
+                //Console.WriteLine(" Atenção: IMC é: " + paciente.calcularImc());
 
                 Console.WriteLine(" Deseja continumar ? (S) sim (N) não");
                 continua = Char.Parse(Console.ReadLine());
 
 
             } while (continua == 'S');
+
+            atender.Listar();// exibindo o calculo do imc da lista
+            atender.TotalRegistros(); 
+
+            Console.WriteLine( "A Média de altura dos pacientes é: " + atender.MediaAlturaPacientes());
 
 
         }
