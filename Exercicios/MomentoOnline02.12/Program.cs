@@ -7,8 +7,11 @@ namespace MomentoOnline02._12
         static void Main(string[] args)
         {
             Pessoa pele = new Pessoa();// tipo de dado; variavel(objeto criado); new; construtor utilizado para instanciar o objeto
-            Pessoa neymar = new Pessoa();
-            Pessoa xuxa = new Pessoa();
+            Pessoa neymar = new Pessoa("Neymar Jr", 1.70, 60);
+            Pessoa xuxa = new Pessoa("Maria da graça", 1.80, 62);
+
+              neymar.exibirinformacoes();
+              xuxa.exibirinformacoes();
 
             // acessando atributos classe pessoas
             pele.nome = "Edson";
@@ -28,6 +31,8 @@ namespace MomentoOnline02._12
             xuxa.acordar();
             pele.exibirinformacoes();
             pele.gerarSenha();
+
+      
 
 
         }

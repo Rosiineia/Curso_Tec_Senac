@@ -12,6 +12,19 @@ namespace MomentoOnline02._12
 
         public DateTime data_nasc;
 
+        // metodo construtor
+
+        public Pessoa(){
+
+
+        }
+
+        public Pessoa(String n,  double a, double p){
+            nome = n;
+            altura = a;
+            peso = p;
+
+        }
 
 
         // bloco dos METODOS ou funcionalidades
@@ -39,10 +52,12 @@ namespace MomentoOnline02._12
 
         public void exibirinformacoes()
         {
+            Console.WriteLine("---------------------------------");
             Console.WriteLine("Nome: " + nome);
             Console.WriteLine("Peso: " + peso);
             Console.WriteLine("Altura: " + altura);
             Console.WriteLine("Data de nascimento: " + data_nasc);
+            Console.WriteLine("---------------------------------");
 
         }
         public void gerarSenha()
