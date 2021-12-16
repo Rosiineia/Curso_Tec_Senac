@@ -1,0 +1,4 @@
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.csprojAssemblyReference.cache
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.AssemblyInfoInputs.cache
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.AssemblyInfo.cs
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.csproj.CoreCompileInputs.cache
