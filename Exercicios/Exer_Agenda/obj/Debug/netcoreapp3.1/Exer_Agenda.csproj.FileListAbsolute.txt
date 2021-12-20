@@ -2,3 +2,12 @@ D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcorea
 D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.AssemblyInfoInputs.cache
 D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.AssemblyInfo.cs
 D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.csproj.CoreCompileInputs.cache
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\bin\Debug\netcoreapp3.1\Exer_Agenda.exe
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\bin\Debug\netcoreapp3.1\Exer_Agenda.deps.json
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\bin\Debug\netcoreapp3.1\Exer_Agenda.runtimeconfig.json
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\bin\Debug\netcoreapp3.1\Exer_Agenda.runtimeconfig.dev.json
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\bin\Debug\netcoreapp3.1\Exer_Agenda.dll
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\bin\Debug\netcoreapp3.1\Exer_Agenda.pdb
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.dll
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.pdb
+D:\CURSO TECNICO - SENAC\Modulo1_Senac\Exercicios\Exer_Agenda\obj\Debug\netcoreapp3.1\Exer_Agenda.genruntimeconfig.cache

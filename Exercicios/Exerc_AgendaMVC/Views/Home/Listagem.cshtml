@@ -1,0 +1,14 @@
+@model List<Contato>
+
+
+
+
+    @foreach (Contato cc in Model)
+            {
+                <tr>
+
+                    <td>@cc.nome</td>
+                      <td>@cc.email</td>
+                        <td>@cc.whatsapp</td>
+                </tr>
+            }

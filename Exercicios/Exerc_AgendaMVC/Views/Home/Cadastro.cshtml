@@ -1,0 +1,28 @@
+@model Contato
+
+
+
+<h1>Formulário de Contato</h1>
+
+<form method=" POST" asp-controller="Homee" asp-action="Contato">
+
+    <p>
+        <label asp-form="nome">Nome: </label>
+        <input asp-form="nome">
+    </p>
+      <p>
+        <label asp-form="email">E-mail: </label>
+         <input asp-form="email">
+    </p>
+      <p>
+        <label asp-form="whatsapp ">Whatsapp : </label>
+         <input asp-form="whatsapp">
+    </p>
+
+    <input type="submit" value="Cadastrar">
+
+
+
+
+
+</form>
