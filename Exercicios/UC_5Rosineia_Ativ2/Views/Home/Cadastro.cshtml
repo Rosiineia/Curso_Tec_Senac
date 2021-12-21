@@ -1,0 +1,26 @@
+@model ItensPedido
+
+<h1> Cadastro de Pedidos</h1>
+
+<form method=" POST" asp-controller="Home" asp-action="Cadastro">
+
+  <p>
+    <label asp-form="descricao"></label>Descrição: </label>
+    <input asp-form="descricao">
+  </p>
+  <p>
+    <label asp-form="valor_unitario"> Valor: </label>
+    <input asp-form="valor_unitario">
+  </p>
+  <p>
+    <label asp-form="quantidade ">Quantidade : </label>
+    <input asp-form="quantidade">
+  </p>
+
+  <input type="submit" value="Cadastrar Pedido">
+
+
+
+
+
+</form>

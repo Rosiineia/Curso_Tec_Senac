@@ -1,0 +1,22 @@
+@model List<ItensPedido>
+
+
+
+
+<h2>Lista de Pedidos</h2>
+
+
+
+@foreach (ItensPedido pp in Model)
+{
+
+  <tr>
+
+    <td>produto___@pp.descricao</td>
+    <td>valor__@pp.valor_unitario</td>
+    <td>quantidade___@pp.quantidade</td>;
+  </tr>
+}
+
+
+Total de Pedidos: @Dados.PedidoAtual.TotalizarItensPedido()
