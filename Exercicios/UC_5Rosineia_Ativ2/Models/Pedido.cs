@@ -17,14 +17,19 @@ namespace UC_5Rosineia_Ativ2
         {
             lista.Add(item);
         }
-        public int TotalizarItensPedido()
+        /*public int TotalizarItensPedido()
         {
             return lista.Count;
 
-        }
-        public List<ItensPedido> ListarItensPedido()
+        }*/
+        public List<ItensPedido> ListarItensPedido(ItensPedido p)
         {
             return lista;
+        }
+
+        public List<ItensPedido> ListarItensPedido()
+        {
+             return lista;
         }
     }
 }

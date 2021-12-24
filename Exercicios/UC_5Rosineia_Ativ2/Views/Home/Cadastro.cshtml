@@ -5,19 +5,21 @@
 <form method=" POST" asp-controller="Home" asp-action="Cadastro">
 
   <p>
-    <label asp-form="descricao"></label>Descrição: </label>
-    <input asp-form="descricao">
+    <label asp-for="descricao">Descrição: </label>
+    <input type"text" nome="Descrição" asp-for="descricao">
   </p>
   <p>
-    <label asp-form="valor_unitario"> Valor: </label>
-    <input asp-form="valor_unitario">
+    <label asp-for="valor_unitario"> Valor: </label>
+    <input type"text" nome="Valor" asp-for="valor_unitario">
   </p>
   <p>
-    <label asp-form="quantidade ">Quantidade : </label>
-    <input asp-form="quantidade">
+    <label asp-for="quantidade ">Quantidade : </label>
+    <input type"text" nome="Quantidade" asp-for="quantidade">
   </p>
 
-  <input type="submit" value="Cadastrar Pedido">
+  <input type="submit" nome="cadastrar" value="Cadastrar Pedido">
+
+ 
 
 
 

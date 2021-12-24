@@ -36,11 +36,16 @@ namespace UC_5Rosineia_Ativ2.Controllers
         }
         [HttpPost]
         public IActionResult Cadastro(ItensPedido p){
-              Dados.PedidoAtual.TotalizarItensPedido();
-            return View(p);
+              Dados.PedidoAtual.Incluir(p);
+            return View();
         }
+        public IActionResult Incuir()
+        {
+            return View();
+        }
+        
         public IActionResult Listagem(){
-             List<ItensPedido> lista = Dados.PedidoAtual.TotalizarItensPedido();
+             List<ItensPedido> lista = Dados.PedidoAtual.ListarItensPedido();
             return View(lista);
         }
 

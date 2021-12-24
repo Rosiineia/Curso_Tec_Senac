@@ -2,21 +2,36 @@
 
 
 
-
 <h2>Lista de Pedidos</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Valor</th>
+      <th>Quantidade</th>
+      </th>
+    </tr>
+  </thead>
+
+  @foreach (ItensPedido pp in Model)
+  {
+     <tr>
+
+      <td>@pp.descricao</td>
+      <td>@pp.valor_unitario</td>
+      <td>@pp.quantidade</td>;
+
+@{ double calculo;
+        calculo = pp.quantidade * pp.valor_unitario;
+
+        <td>@calculo</td>
+      }
 
 
+     
+    </tr>
 
-@foreach (ItensPedido pp in Model)
-{
-
-  <tr>
-
-    <td>produto___@pp.descricao</td>
-    <td>valor__@pp.valor_unitario</td>
-    <td>quantidade___@pp.quantidade</td>;
-  </tr>
-}
-
-
-Total de Pedidos: @Dados.PedidoAtual.TotalizarItensPedido()
+  }
+</table>
+Total de Pedidos: @Dados.PedidoAtual.ListarItensPedido();
+ 
