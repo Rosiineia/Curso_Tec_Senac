@@ -1,0 +1,30 @@
+
+@model Agendamento
+
+<h1> Agendamentos </h1>
+
+<form method="POST" asp-controller="Home" asp-action="Cadastro">
+<p>
+ <label asp-for="nome"> Nome: </label>
+    <input  asp-for="nome">
+  </p>
+  <p>
+    <label asp-for="telefone"> Telefone: </label>
+    <input  asp-for="telefone">
+  </p>
+  <p>
+    <label asp-for="data">Data : </label>
+    <input type="" name="" asp-for="data">
+  </p>
+  <p>
+    <label asp-for="animal">Animal : </label>
+    <input type="" name="" asp-for="animal">
+  </p>
+  <p>
+    <label asp-for="necessidade">Necessidade : </label>
+    <input type="" name="" asp-for="necessidade">
+  </p>
+
+  <input type="submit" value="Cadastrar Agendamento">
+</form>
+
