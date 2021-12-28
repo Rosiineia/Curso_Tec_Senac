@@ -38,7 +38,7 @@ namespace UC_5Rosineia_Ativ3.Controllers
         public IActionResult Cadastro(Agendamento a)
         {
             Dados.AgendamentoAtual.AdicionarAgendamento(a);
-            return View();
+            return RedirectToAction("Listagem");
         }
         public IActionResult Listagem()
         {
