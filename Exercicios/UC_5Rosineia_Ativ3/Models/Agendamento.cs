@@ -10,7 +10,7 @@ namespace UC_5Rosineia_Ativ3.Models
 
         public string necessidade { get; set; }
 
-        public double telefone { get; set; }
+        public ulong telefone { get; set; }
 
 
         public DateTime data { get; set; }

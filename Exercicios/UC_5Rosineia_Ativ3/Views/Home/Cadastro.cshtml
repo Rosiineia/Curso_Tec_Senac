@@ -1,30 +1,68 @@
-
 @model Agendamento
 
-<h1> Agendamentos </h1>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<form method="POST" asp-controller="Home" asp-action="Cadastro">
-<p>
- <label asp-for="nome"> Nome: </label>
-    <input  asp-for="nome">
-  </p>
-  <p>
-    <label asp-for="telefone"> Telefone: </label>
-    <input  asp-for="telefone">
-  </p>
-  <p>
-    <label asp-for="data">Data : </label>
-    <input type="" name="" asp-for="data">
-  </p>
-  <p>
-    <label asp-for="animal">Animal : </label>
-    <input type="" name="" asp-for="animal">
-  </p>
-  <p>
-    <label asp-for="necessidade">Necessidade : </label>
-    <input type="" name="" asp-for="necessidade">
-  </p>
+<head>
+  <meta charset="UTF-8">
 
-  <input type="submit" value="Cadastrar Agendamento">
-</form>
+  <title>Shop pet</title>
+</head>
 
+<body>
+  <header>
+
+    <h1>Shop Pet</h1>
+
+    <nav>
+      <a asp-controller="Home" asp-action="Index">Incio</a>
+      <a asp-controller="Home" asp-action="Privacy">Serviços</a>
+      <a asp-controller="Home" asp-action="Cadastro">Agendamento</a>
+    </nav>
+  </header>
+  <div>
+    <main>
+      <h2>Agende a consulta de seu pet!!</h2>
+      <br>
+      <h3>Agendamento</h3>
+      <br>
+      <p>Favor preencher os dados abaixo</p>
+
+      <form method="POST" asp-controller="Home" asp-action="Listagem">
+        <p>
+          <label asp-for="nome"> Nome: </label>
+          <input asp-for="nome">
+        </p><br>
+        <p>
+          <label asp-for="telefone"> Telefone: </label>
+          <input asp-for="telefone">
+        </p>
+        <p>
+          <label asp-for="data">Data do Atendimento : </label>
+          <input type="date" name="" asp-for="data" required>
+        </p>
+        <br>
+        <p>
+          <label asp-for="animal">Selecionar animal : </label>
+          <select asp-for="animal" required>
+            <option value="Gato filhote"></option>
+            <option value="Gato filhote">Gato filhote</option>
+            <option value="Cachorro filhote">Cachorro filhote</option>
+            <option value="Passaro de pequeno porte">Passaro pequeno porte</option>
+            <option value="Passaro de grande porte">Passaro de grande porte</option>
+            <option value="Cachorro Adulto">Cachorro Adulto</option>
+            <option value="Gato Adulto">Gato Adulto</option>
+          </select>
+        </p>
+        <p>
+          <label asp-for="necessidade">Necessidade : </label>
+        </p>
+        <textarea asp-for="necessidade" name="necessidade" cols="40" rows="15"
+          required>Descrever necessidade do pet: </textarea><br>
+          <input type="submit" value="Cadastrar Agendamento">
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

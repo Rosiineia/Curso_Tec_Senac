@@ -1,6 +1,6 @@
 @model List<Agendamento>
 
-<h2>Lista de Agendamentos</h2>
+<h2>Confirmação de Agendamentos</h2>
 
 <table>
   <style>
@@ -10,6 +10,11 @@
       border: 2px solid black;
     }
   </style>
+  <h3>Agendamento realizado, Parabéns!!</h3>
+
+   @foreach (Agendamento a in Model)
+  {
+    <table>
   <tr>
     <th>Nome</th>
     <th>Telefone</th> <br>
@@ -17,16 +22,16 @@
     <th>Animal</th><br>
     <th>Necessidade</th><br>
   </tr>
-  @foreach (Agendamento a in Model)
-  {
+ 
     <tr>
 
       <td>@a.nome</td>
       <td>@a.telefone</td>
-      <td>@a.data</td>
+      <td>@a.data.ToString("dd/MM/yyyy")</td>
       <td>@a.animal</td>
       <td>@a.necessidade</td>
     </tr>
+    </table>
   }
 </table>
-Total de Agendamentos Cadastrados: @Dados.AgendamentoAtual.TotalizarAgendamento()
+Retornar para página pricipal <a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
