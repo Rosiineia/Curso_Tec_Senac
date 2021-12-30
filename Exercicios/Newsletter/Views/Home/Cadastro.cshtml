@@ -1,0 +1,27 @@
+@using Newsletter.Models
+@model List<Usuario>
+
+    <h2>Usuario Cadastrado com Sucesso!</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Genero</th>
+            </tr>
+        <tbody>
+            @foreach (Usuario u in Model)
+                {
+                <tr>
+                    <td>@u.nome</td>
+                    <td>@u.email</td>
+                    <td>@u.genero</td>
+                </tr>
+
+                }
+        </tbody>
+        </thead>
+    </table><br>
+
+    <a href="/">Voltar ao Cadastro</a>
