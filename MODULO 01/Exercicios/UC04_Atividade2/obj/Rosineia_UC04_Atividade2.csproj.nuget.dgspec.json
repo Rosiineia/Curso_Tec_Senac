@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\Rosineia_UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj": {}
+    "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj": {}
   },
   "projects": {
-    "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\Rosineia_UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj": {
+    "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\Rosineia_UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj",
+        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj",
         "projectName": "Rosineia_UC04_Atividade2",
-        "projectPath": "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\Rosineia_UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj",
+        "projectPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\UC04_Atividade2\\Rosineia_UC04_Atividade2.csproj",
         "packagesPath": "C:\\Users\\Rosy\\.nuget\\packages\\",
-        "outputPath": "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\Rosineia_UC04_Atividade2\\obj\\",
+        "outputPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\UC04_Atividade2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rosy\\AppData\\Roaming\\NuGet\\NuGet.Config"
