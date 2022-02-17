@@ -22,17 +22,20 @@ namespace Rosineia_UC04_Atividade2.Controllers
         public IActionResult excluir(int Id){
 
             UsuarioRepository us = new UsuarioRepository();
-           Usuario userEncontrado= us.BuscarPorID(Id);
+           
+            Usuario userEncontrado = us.BuscarPorId(Id);
 
-            us.excluir(userEncontrado);
-
+            if(userEncontrado.Id>0){
+                 us.excluir(userEncontrado);
+            }else{
+                ViewData["mensagem"] = "Usuario não Localizado";
+            }
             return RedirectToAction("Lista");
         }
 
         public IActionResult incluir(){
             return View();
         }
-
             [HttpPost]
 
             public IActionResult incluir(Usuario novoUser){
@@ -40,25 +43,22 @@ namespace Rosineia_UC04_Atividade2.Controllers
                 UsuarioRepository us = new UsuarioRepository();
                 us.incluir(novoUser);
 
-
                 ViewData["mensagem"]= "Cadastro Realizado com Sucesso";
                 return View();
             }
-
-            public  IActionResult alterar(int Id){
+            public  IActionResult Alterar(int Id){
                 UsuarioRepository us = new UsuarioRepository();
-               Usuario userEncontrado = us.BuscarPorID(Id);
+               Usuario userEncontrado = us.BuscarPorId(Id);
 
                return View(userEncontrado);
             }
             [HttpPost]
-            public IActionResult alterar(Usuario usuario ){
+
+            public IActionResult alterar(Usuario usuario){
                 UsuarioRepository us = new UsuarioRepository();
                 us.alterar(usuario);
 
                 return RedirectToAction("Lista");
-
-
                 }
             
         }

@@ -4,7 +4,7 @@
     }
 
 
- <table>
+ <table class="table">
   <tr>
     <th>Id</th>
     <th>Nome</th> <br>
@@ -22,6 +22,10 @@
       <td>@us.Senha</td>
       <td>@us.DataNascimento</td>
       <td>
+
+        <a href="/Usuario/alterar?Id=@us.Id">Alterar</a>
+
+        <a href="/Usuario/excluir?Id=@us.Id">Excluir</a>
       </td>
 
     </tr>

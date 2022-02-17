@@ -32,7 +32,7 @@ namespace Rosineia_UC04_Atividade2.Models
             Conexao.Open();
             //preparar Query
 
-            String Query = "INSERT INTO Usuario (Nome, Login,Senha,DataNascimento) VALUES(@Nome, @Login,@Senha,@DataNascimento)";
+            String Query = "INSERT INTO Usuario (Nome,Login,Senha,DataNascimento) VALUES( @Nome, @Login, @Senha, @DataNascimento)";
             //Preparr o comando
 
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);
@@ -56,7 +56,7 @@ namespace Rosineia_UC04_Atividade2.Models
             Conexao.Open();
             //preparar Query
 
-            String Query = "UPDATE Usuario Nome=@Nome, Login=@Login,Senha=@Senha,DataNascimento=@DataNascimento WHERE id=@";
+            String Query = "UPDATE Usuario SET Nome=@Nome,Login=@Login,Senha=@Senha,DataNascimento=@DataNascimento WHERE Id=@Id";
             //Preparr o comando
 
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);
@@ -91,7 +91,7 @@ namespace Rosineia_UC04_Atividade2.Models
             //fecha conexão
             Conexao.Close();
         }
-        public Usuario BuscarPorID(int Id){
+        public Usuario BuscarPorId(int Id){
 
             //Abrir conexão
              MySqlConnection Conexao = new MySqlConnection(DadosConexao);
@@ -99,14 +99,14 @@ namespace Rosineia_UC04_Atividade2.Models
             //Criar usuario vazio
              Usuario UsuarioEncontrado = new Usuario();            
             //preparar Query
-            String Query = "SELECT * FROM WHERE Id@Id";
+            String Query = "SELECT * FROM WHERE Id=@Id";
             //Preparar  comando e executa
             MySqlCommand Comando = new MySqlCommand(Query,Conexao);
             //Trata do SQL injection
             Comando.Parameters.AddWithValue("@Id", Id);
             //recuparar registros do comando
             MySqlDataReader Reader = Comando.ExecuteReader();
-            //Procuro
+            //Percurso
         
                 UsuarioEncontrado.Id = Reader.GetInt32("Id");
 
