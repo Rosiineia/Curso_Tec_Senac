@@ -11,6 +11,33 @@ namespace Rosineia_UC04_Atividade2.Controllers
 {
     public class UsuarioController : Controller
     {
+
+        public IActionResult Login(){
+            return View();
+        }
+
+        [HttpPost]
+            public IActionResult Login(Usuario usuario){
+
+               UsuarioRepository us = new UsuarioRepository();
+               Usuario usuarioSessao = us.ValidarLogin(usuario);
+               if(usuarioSessao==null){
+                   //Não localizado ususario com dados informados no objeto ususario
+                   ViewBag.mensagem = "Usuario não localizado com o login e senha informado";
+                   return View();
+               }else{ //Login localizado
+                    ViewBag.mensagem ="Você está logado";
+                    //registra  a sessão e dados do usuario
+
+
+                    //redirecionamento
+                    //return RedirectToAction("Login");
+                    return View();
+
+               }
+                              
+            }    
+
         public IActionResult Lista(){
 
             UsuarioRepository us = new UsuarioRepository();
@@ -23,7 +50,7 @@ namespace Rosineia_UC04_Atividade2.Controllers
 
             UsuarioRepository us = new UsuarioRepository();
            
-            Usuario userEncontrado = us.BuscarPorId(Id);
+            Usuario userEncontrado = us.BuscarPorID(Id);
 
             if(userEncontrado.Id>0){
                  us.excluir(userEncontrado);
@@ -48,7 +75,7 @@ namespace Rosineia_UC04_Atividade2.Controllers
             }
             public  IActionResult Alterar(int Id){
                 UsuarioRepository us = new UsuarioRepository();
-               Usuario userEncontrado = us.BuscarPorId(Id);
+               Usuario userEncontrado = us.BuscarPorID(Id);
 
                return View(userEncontrado);
             }

@@ -1,0 +1,25 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method= "post" asp-action="Login">
+
+<p>
+<label asp-for="Login"> Login:</label>
+<input asp-for="Login">
+</p>
+
+<p>
+<label asp-for="Senha"> Senha:</label>
+<input asp-for="Senha">  
+</p>
+<p>
+<input type="submit" value="Acessar">
+</p>
+
+</form>
+<p> 
+@ViewBag.mensagem
+</p>

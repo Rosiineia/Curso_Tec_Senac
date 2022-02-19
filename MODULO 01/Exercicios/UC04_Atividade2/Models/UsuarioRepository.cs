@@ -21,8 +21,54 @@ namespace Rosineia_UC04_Atividade2.Models
             Console.WriteLine("Banco de Dados Funcionando");
 
             Conexao.Close();//Fechada conexão com o banco
-
         }
+        public  Usuario ValidarLogin(Usuario usuario){
+
+            MySqlConnection Conexao = new MySqlConnection(DadosConexao);    
+            Conexao.Open();
+
+            //Criar usuario vazio com null
+             Usuario usuarioEncontrado = null;  
+
+            //preparar Query
+            String Query = "SELECT * FROM Usuario WHERE Login=@Login and Senha=@Senha";
+
+            //Preparar  comando e executa
+            MySqlCommand Comando = new MySqlCommand(Query,Conexao);
+
+            //Trata do SQL injection
+            Comando.Parameters.AddWithValue("@Login",usuario.Login);
+            Comando.Parameters.AddWithValue("@Login",usuario.Senha);
+
+            //recuparar registros do comando
+            MySqlDataReader Reader = Comando.ExecuteReader();
+            //Percurso
+            if(Reader.Read()){
+
+                usuarioEncontrado = new Usuario();
+                usuarioEncontrado.Id = Reader.GetInt32("Id");
+
+                if(!Reader.IsDBNull(Reader.GetOrdinal("Nome"))){
+                    //Tratativa p/ não permitir inserir na lista dados NULL
+                usuarioEncontrado.Nome = Reader.GetString("Nome");
+                }
+
+                if(!Reader.IsDBNull(Reader.GetOrdinal("Login"))){
+                usuarioEncontrado.Login = Reader.GetString("Login");
+                }
+
+                if(!Reader.IsDBNull(Reader.GetOrdinal("Senha"))){
+                usuarioEncontrado.Senha = Reader.GetString("Senha");
+                }
+                usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
+            }        
+            //fecha conexão
+            Conexao.Close();
+            //Se não localizado retorna NULL
+            return usuarioEncontrado;
+        }
+
+
         //4 metodos para CRUD
         // Inserir, alterar, listar, e excluir ususarios no banco de dados
 
@@ -91,15 +137,15 @@ namespace Rosineia_UC04_Atividade2.Models
             //fecha conexão
             Conexao.Close();
         }
-        public Usuario BuscarPorId(int Id){
+        public Usuario BuscarPorID(int Id){
 
             //Abrir conexão
              MySqlConnection Conexao = new MySqlConnection(DadosConexao);
             Conexao.Open();
             //Criar usuario vazio
-             Usuario UsuarioEncontrado = new Usuario();            
+             Usuario usuarioEncontrado = new Usuario();            
             //preparar Query
-            String Query = "SELECT * FROM WHERE Id=@Id";
+            String Query = "SELECT * FROM WHERE Usuario Id=@Id";
             //Preparar  comando e executa
             MySqlCommand Comando = new MySqlCommand(Query,Conexao);
             //Trata do SQL injection
@@ -107,27 +153,29 @@ namespace Rosineia_UC04_Atividade2.Models
             //recuparar registros do comando
             MySqlDataReader Reader = Comando.ExecuteReader();
             //Percurso
+            if(Reader.Read()){
         
-                UsuarioEncontrado.Id = Reader.GetInt32("Id");
+                usuarioEncontrado.Id = Reader.GetInt32("Id");
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Nome"))){
                     //Tratativa p/ não permitir inserir na lista dados NULL
-                UsuarioEncontrado.Nome = Reader.GetString("Nome");
+                usuarioEncontrado.Nome = Reader.GetString("Nome");
                 }
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Login"))){
-                UsuarioEncontrado.Login = Reader.GetString("Login");
+                usuarioEncontrado.Login = Reader.GetString("Login");
                 }
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Senha"))){
-                UsuarioEncontrado.Senha = Reader.GetString("Senha");
+                usuarioEncontrado.Senha = Reader.GetString("Senha");
                 }
-                UsuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
+                usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
+            }
             
             //fecha conexão
             Conexao.Close();
             //retornar usuario encontrado
-            return UsuarioEncontrado;
+            return usuarioEncontrado;
         }
 
         public List<Usuario> Listar(){
@@ -145,25 +193,25 @@ namespace Rosineia_UC04_Atividade2.Models
             //percorrer resgisto a registro o READER retornando
             while (Reader.Read()){
 
-                Usuario UsuarioEncontrado = new Usuario();
+                Usuario usuarioEncontrado = new Usuario();
                 
-                UsuarioEncontrado.Id = Reader.GetInt32("Id");
+                usuarioEncontrado.Id = Reader.GetInt32("Id");
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Nome"))){
                     //Tratativa p/ não permitir inserir na lista dados NULL
-                UsuarioEncontrado.Nome = Reader.GetString("Nome");
+                usuarioEncontrado.Nome = Reader.GetString("Nome");
                 }
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Login"))){
-                UsuarioEncontrado.Login = Reader.GetString("Login");
+                usuarioEncontrado.Login = Reader.GetString("Login");
                 }
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Senha"))){
-                UsuarioEncontrado.Senha = Reader.GetString("Senha");
+                usuarioEncontrado.Senha = Reader.GetString("Senha");
                 }
                 
-                 /*UsuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");*/
-                 ListaDeUsuarios.Add(UsuarioEncontrado);  
+                 /*usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");*/
+                 ListaDeUsuarios.Add(usuarioEncontrado);  
             }
             //Fechar conexão
             Conexao.Close();
