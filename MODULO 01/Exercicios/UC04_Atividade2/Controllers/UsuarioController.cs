@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Rosineia_UC04_Atividade2.Models;
 
@@ -28,9 +29,12 @@ namespace Rosineia_UC04_Atividade2.Controllers
                }else{ //Login localizado
                     ViewBag.mensagem ="Você está logado";
                     //registra  a sessão e dados do usuario
+                    HttpContext.Session.SetInt32("IdUsuario", usuarioSessao.Id);
+                    HttpContext.Session.SetString("NomeUsuario", usuarioSessao.Nome);
 
 
                     //redirecionamento
+
                     //return RedirectToAction("Login");
                     return View();
 
@@ -38,9 +42,24 @@ namespace Rosineia_UC04_Atividade2.Controllers
                               
             }    
 
-        public IActionResult Lista(){
+            public IActionResult Logout(){
 
+                // limpar os dados da sessão
+                HttpContext.Session.Clear();//limpa todos os metodos da sessão
+
+
+                //redirecionamento
+                return View("Login");
+                
+            }
+
+        public IActionResult Lista(){
+            //Validando se o ususario está logado, caso não eseja é redirecionado para o login
+            if(HttpContext.Session.GetInt32("IdUsuario")==null){
+                return RedirectToAction("Login", "Usuario");
+            }
             UsuarioRepository us = new UsuarioRepository();
+
             List<Usuario> lista = us.Listar();
             return View(lista);
 
@@ -48,10 +67,8 @@ namespace Rosineia_UC04_Atividade2.Controllers
 
         public IActionResult excluir(int Id){
 
-            UsuarioRepository us = new UsuarioRepository();
-           
+            UsuarioRepository us = new UsuarioRepository();           
             Usuario userEncontrado = us.BuscarPorID(Id);
-
             if(userEncontrado.Id>0){
                  us.excluir(userEncontrado);
             }else{
@@ -66,6 +83,10 @@ namespace Rosineia_UC04_Atividade2.Controllers
             [HttpPost]
 
             public IActionResult incluir(Usuario novoUser){
+
+                if(HttpContext.Session.GetInt32("IdUsuario")==null){
+                return RedirectToAction("Login", "Usuario");
+            }
 
                 UsuarioRepository us = new UsuarioRepository();
                 us.incluir(novoUser);

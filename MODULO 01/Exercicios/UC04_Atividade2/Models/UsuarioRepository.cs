@@ -38,7 +38,7 @@ namespace Rosineia_UC04_Atividade2.Models
 
             //Trata do SQL injection
             Comando.Parameters.AddWithValue("@Login",usuario.Login);
-            Comando.Parameters.AddWithValue("@Login",usuario.Senha);
+            Comando.Parameters.AddWithValue("@Senha",usuario.Senha);
 
             //recuparar registros do comando
             MySqlDataReader Reader = Comando.ExecuteReader();
@@ -145,7 +145,7 @@ namespace Rosineia_UC04_Atividade2.Models
             //Criar usuario vazio
              Usuario usuarioEncontrado = new Usuario();            
             //preparar Query
-            String Query = "SELECT * FROM WHERE Usuario Id=@Id";
+            String Query = "SELECT * FROM  Usuario WHERE Id=@Id";
             //Preparar  comando e executa
             MySqlCommand Comando = new MySqlCommand(Query,Conexao);
             //Trata do SQL injection
@@ -153,24 +153,20 @@ namespace Rosineia_UC04_Atividade2.Models
             //recuparar registros do comando
             MySqlDataReader Reader = Comando.ExecuteReader();
             //Percurso
-            if(Reader.Read()){
-        
+            if(Reader.Read()){        
                 usuarioEncontrado.Id = Reader.GetInt32("Id");
-
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Nome"))){
                     //Tratativa p/ não permitir inserir na lista dados NULL
                 usuarioEncontrado.Nome = Reader.GetString("Nome");
                 }
-
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Login"))){
                 usuarioEncontrado.Login = Reader.GetString("Login");
                 }
-
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Senha"))){
                 usuarioEncontrado.Senha = Reader.GetString("Senha");
-                }
-                usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
+                }                
             }
+            //usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");*/
             
             //fecha conexão
             Conexao.Close();
