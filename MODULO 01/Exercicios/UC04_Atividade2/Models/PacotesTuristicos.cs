@@ -2,7 +2,7 @@ using System;
 
 
 
-namespace Rosineia_UC04_Atividade2.Models
+namespace UC04_Atividade2.Models
 {
     public class PacotesTuristicos
     {

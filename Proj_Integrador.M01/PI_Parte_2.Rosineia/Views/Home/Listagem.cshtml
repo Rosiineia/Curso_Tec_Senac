@@ -1,0 +1,40 @@
+@model List<ItensPedido>
+
+
+<h2>Lista de Pedidos</h2>
+    <table>
+         <style>
+table, th, td {
+  border: 2px solid black;
+}
+</style>
+         <tr>
+              <th>Descricão</th>   
+            <th>Valor</th> <br>
+            <th>Quantidade</th><br>
+        </tr>
+   
+@foreach (ItensPedido pp in Model)
+{   
+    <tr>
+
+    <td>@pp.descricao</td>
+    <td>@pp.valor_unitario</td>
+    <td>@pp.quantidade</td>
+  </tr>
+
+  <p>  
+      @{
+          double total= 0;
+          total = pp.quantidade*pp.valor_unitario;
+      }
+      
+       </p>
+       
+}
+</table>
+<br>
+
+Total de pedidos cadastrados: @Dados.PedidoAtual.TotalizarItensPedido()
+
+
