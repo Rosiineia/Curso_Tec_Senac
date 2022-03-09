@@ -44,3 +44,4 @@ D:\CURSO TECNICO - SENAC\MODULO 01\MODULO UC4\RosineiaJesus_UC04_Ativ2\obj\Debug
 D:\CURSO TECNICO - SENAC\MODULO 01\MODULO UC4\RosineiaJesus_UC04_Ativ2\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\alterar.cshtml.g.cs
 D:\CURSO TECNICO - SENAC\MODULO 01\MODULO UC4\RosineiaJesus_UC04_Ativ2\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\incluir.cshtml.g.cs
 D:\CURSO TECNICO - SENAC\MODULO 01\MODULO UC4\RosineiaJesus_UC04_Ativ2\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\Lista.cshtml.g.cs
+D:\CURSO TECNICO - SENAC\MODULO 01\MODULO UC4\RosineiaJesus_UC04_Ativ2\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\Vitrine.cshtml.g.cs

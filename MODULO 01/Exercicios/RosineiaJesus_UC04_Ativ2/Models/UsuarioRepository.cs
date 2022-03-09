@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 
 using MySqlConnector;
 
@@ -164,7 +165,7 @@ public void alterar(Usuario user){
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Senha"))){
                 usuarioEncontrado.Senha = Reader.GetString("Senha");
                 }
-                usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
+                //usuarioEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
                                
             }         
             //fecha conexão
@@ -211,6 +212,9 @@ public void alterar(Usuario user){
             //Fechar conexão
             Conexao.Close();
             return ListaDeUsuarios;
+
         }
+
     }
+
 }

@@ -38,7 +38,7 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
                     //redirecionamento
 
                     //return RedirectToAction("Login");
-                    return View();
+                    return RedirectToAction("Lista", "PacotesTuristicos");
 
                }
                               
@@ -57,14 +57,14 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
 
         public IActionResult Lista(){
             //Validando se o ususario está logado, caso não eseja é redirecionado para o login
-            if(HttpContext.Session.GetInt32("IdUsuario")==null){
+            if (HttpContext.Session.GetInt32("IdUsuario") == null){
                 return RedirectToAction("Login", "Usuario");
             }
+            int idUsuario = (int) HttpContext.Session.GetInt32("IdUsuario");
             UsuarioRepository us = new UsuarioRepository();
 
             List<Usuario> lista = us.Listar();
             return View(lista);
-
         }
 
         public IActionResult excluir(int Id){
@@ -86,10 +86,10 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
 
             public IActionResult incluir(Usuario novoUser){
 
-                if(HttpContext.Session.GetInt32("IdUsuario")==null){
+                if(HttpContext.Session.GetInt32("IdUsuario")==null)
+                {
                 return RedirectToAction("Login", "Usuario");
-            }
-
+                }
                 UsuarioRepository us = new UsuarioRepository();
                 us.incluir(novoUser);
 
@@ -97,8 +97,12 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
                 return View();
             }
             public  IActionResult Alterar(int Id){
+                if(HttpContext.Session.GetInt32("IdUsuario") ==null)
+                {
+                    return RedirectToAction("Login", "Usuario");
+                }
                 UsuarioRepository us = new UsuarioRepository();
-               Usuario userEncontrado = us.BuscarPorID(Id);
+                Usuario userEncontrado = us.BuscarPorID(Id);
 
                return View(userEncontrado);
             }

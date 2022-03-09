@@ -1,0 +1,20 @@
+@model List<PacotesTuristicos>
+@using Microsoft.AspNetCore.Http;
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Origem</th>
+        <th>Destino</th>
+    </tr>
+    </thead>
+    @foreach (PacotesTuristicos p in Model)
+    {
+    <tr>
+        <th>@p.Nome</th>
+        <th>@p.Origem</th>
+        <th>@p.Destino</th>
+    </tr>
+    }
+</table>

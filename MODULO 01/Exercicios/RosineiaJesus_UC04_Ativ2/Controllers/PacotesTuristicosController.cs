@@ -24,6 +24,7 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
             List<PacotesTuristicos> lista = us.Listar();
             return View(lista);
              }
+             
             public  IActionResult alterar(int Id){
                 PacotesTuristicosRepository us = new PacotesTuristicosRepository();
                PacotesTuristicos pacoteEncontrado = us.BuscarPorID(Id);
@@ -38,21 +39,27 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
 
                 return RedirectToAction("Lista");
             }
-
+            
             public IActionResult incluir()
             {
-                return View();
+
+            if(HttpContext.Session.GetInt32("IdUsuario")==null)
+            {
+           
+                return RedirectToAction("Login", "Usuario");
             }
-            
+                return View();
+            }            
             [HttpPost]
 
-            public IActionResult incluir(PacotesTuristicos p){
+            public IActionResult incluir(PacotesTuristicos p)
+            {
 
                 PacotesTuristicosRepository ptr = new PacotesTuristicosRepository();
                 p.Usuario = (int)(HttpContext.Session.GetInt32("IdUsuario"));
                 ptr.incluir(p);
                 
-
+                
                 ViewData["mensagem"]= "Pacote Incluido com  Sucesso";
                 return View();
                 }
@@ -67,5 +74,11 @@ namespace RosineiaJesus_UC04_Ativ2.Controllers
             }
             return RedirectToAction("Lista");
         }
+        public IActionResult Vitrine(){
+
+            PacotesTuristicosRepository ptr = new PacotesTuristicosRepository();
+                            
+                return View(ptr.Listar());
+            }
     }
 }

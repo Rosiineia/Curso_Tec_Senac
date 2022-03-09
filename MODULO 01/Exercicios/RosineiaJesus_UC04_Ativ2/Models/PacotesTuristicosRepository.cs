@@ -74,7 +74,7 @@ namespace RosineiaJesus_UC04_Ativ2.Models
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);
 
              //Tratar SQL injection
-             Comando.Parameters.AddWithValue("@Id",novoPacote.Id);
+             
              Comando.Parameters.AddWithValue("@Nome",novoPacote.Nome);
              Comando.Parameters.AddWithValue("@Origem",novoPacote.Origem);
              Comando.Parameters.AddWithValue("@Destino",novoPacote.Destino);
@@ -167,9 +167,7 @@ namespace RosineiaJesus_UC04_Ativ2.Models
                 }
                 PacoteEncontrado.Saida = Reader.GetDateTime("Saida");
                  
-
                 PacoteEncontrado.Retorno = Reader.GetDateTime("Retorno");
-                 
                     
                 }  
             //fecha conexão
