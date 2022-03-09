@@ -95,11 +95,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\RosineiaJesus_UC04_Ativ2\\RosineiaJesus_UC04_Ativ2.csproj",
+      "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\RosineiaJesus_UC04_Ativ2\\RosineiaJesus_UC04_Ativ2.csproj",
       "projectName": "RosineiaJesus_UC04_Ativ2",
-      "projectPath": "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\RosineiaJesus_UC04_Ativ2\\RosineiaJesus_UC04_Ativ2.csproj",
+      "projectPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\RosineiaJesus_UC04_Ativ2\\RosineiaJesus_UC04_Ativ2.csproj",
       "packagesPath": "C:\\Users\\Rosy\\.nuget\\packages\\",
-      "outputPath": "D:\\CURSO TECNICO - SENAC\\MODULO 01\\MODULO UC4\\RosineiaJesus_UC04_Ativ2\\obj\\",
+      "outputPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\MODULO 01\\Exercicios\\RosineiaJesus_UC04_Ativ2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rosy\\AppData\\Roaming\\NuGet\\NuGet.Config"
