@@ -81,7 +81,7 @@ namespace RosineiaJesus_UC04_Ativ2.Models
              Comando.Parameters.AddWithValue("@Atrativos",novoPacote.Atrativos);
              Comando.Parameters.AddWithValue("@Saida",novoPacote.Saida);
              Comando.Parameters.AddWithValue("@Retorno",novoPacote.Retorno);
-             Comando.Parameters.AddWithValue("@Usuario",novoPacote.Usuario);
+             //Comando.Parameters.AddWithValue("@Usuario",novoPacote.Usuario);
 
              //Executr no banco
              Comando.ExecuteNonQuery(); 
