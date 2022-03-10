@@ -1,0 +1,37 @@
+@model List<AgendamentoServicos>
+@using Microsoft.AspNetCore.Http;
+
+
+@{
+    ViewData["Title"] = "Lista de Agendamentos";
+} 
+
+<table class="table">
+  <tr>
+    <th>Id</th>
+    <th>Nome</th> <br>
+    <th>Data de Solicitacao</th><br>
+    <th>Serviços</th><br>
+   <br>
+  </tr>
+ @foreach (AgendamentoServicos us in Model)
+  {
+    <tr>
+
+      <td>@us.Id</td>
+      <td>@us.Nome</td>
+      <td>@us.DataSolicitacao</td>
+      <td>@us.Servico</td>
+     
+      <td>
+
+        <a href="/AgendamentoServicos/alterar?Id=@us.Id">Alterar</a>
+
+        <a href="/AgendamentoServicos/excluir?Id=@us.Id">Excluir</a>
+      </td>
+
+    </tr>
+  }
+  <tbody>
+  </tbody>
+</table>

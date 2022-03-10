@@ -1,0 +1,37 @@
+@model List<Usuario>
+@using Microsoft.AspNetCore.Http;
+
+
+@{
+    ViewData["Title"] = "Lista ";
+} 
+
+<table class="table">
+  <tr>
+    <th>Id</th>
+    <th>Nome</th> <br>
+    <th>Login </th><br>
+    <th>Senha</th><br>
+   <br>
+  </tr>
+ @foreach (Usuario us in Model)
+  {
+    <tr>
+
+      <td>@us.Id</td>
+      <td>@us.Nome</td>
+      <td>@us.Login </td>
+      <td>@us.Senha</td>
+     
+      <td>
+
+        <a href="/Usuario/alterar?Id=@us.Id">Alterar</a>
+
+        <a href="/Usuario/excluir?Id=@us.Id">Excluir</a>
+      </td>
+
+    </tr>
+  }
+  <tbody>
+  </tbody>
+</table>

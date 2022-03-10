@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "A5T4l1V/jD4OQPRCFBt25OMo4pjHlR4IgBs5twMRThlW9Xh6kkVX4yHPTna/96LUxjgxMbLIrs+eIae/fmSRkA==",
+  "success": true,
+  "projectFilePath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rosy\\.nuget\\packages\\mysqlconnector\\2.1.8\\mysqlconnector.2.1.8.nupkg.sha512",
+    "C:\\Users\\Rosy\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
