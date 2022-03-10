@@ -36,7 +36,7 @@ namespace PI_Parte_4.Rosineia.Controllers
                     //redirecionamento
 
                     //return RedirectToAction("Login");
-                    return RedirectToAction("Lista", "PacotesTuristicos");
+                    return RedirectToAction("Lista", "AgendamentoServicos");
 
                }
                               

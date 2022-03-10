@@ -34,8 +34,8 @@ namespace PI_Parte_4.Rosineia.Models
                 AgendamentoRealizado.Nome = Reader.GetString("Nome");
                 }
 
-                if(!Reader.IsDBNull(Reader.GetOrdinal("DataSolicitacao "))){
-                AgendamentoRealizado.DataSolicitacao  = Reader.GetDateTime("DataSolicitacao ");
+                if(!Reader.IsDBNull(Reader.GetOrdinal("DataSolicitacao"))){
+                AgendamentoRealizado.DataSolicitacao  = Reader.GetDateTime("DataSolicitacao");
                 }
 
                 if(!Reader.IsDBNull(Reader.GetOrdinal("Servico "))){
@@ -65,7 +65,7 @@ namespace PI_Parte_4.Rosineia.Models
              Comando.Parameters.AddWithValue("@DataSolicitacao",novaAgenda.DataSolicitacao);
              Comando.Parameters.AddWithValue("@Servico",novaAgenda.Servico);
             
-             //Comando.Parameters.AddWithValue("@Usuario",novaAgenda.Usuario);
+             Comando.Parameters.AddWithValue("@Usuario",novaAgenda.Usuario);
              //Executr no banco
              Comando.ExecuteNonQuery(); 
             //fecha conexão

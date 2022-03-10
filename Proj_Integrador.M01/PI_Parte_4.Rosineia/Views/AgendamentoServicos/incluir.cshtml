@@ -14,20 +14,28 @@
 <form method="post" asp-action="incluir">
 
      <p>
-        <label for="Nome">Nome</label>
+        <label asp-for="Nome">Nome</label>
         <input asp-for = "Nome">
     </p>
       <p>
-        <label for="DataSolicitacao ">Data da Solicitacao</label>
+        <label asp-for="DataSolicitacao ">Data da Solicitacao</label>
         <input asp-for = "DataSolicitacao ">
     </p>
      <p>
-        <label for="Servico">Serviço</label>
-        <input asp-for = "Servico">
-    </p>   
+        <label for="Servico">Selecionar Serviço/Material :</label>
+         <select asp-for="Servico"required>
+         <option value="Carreto Material leve">Material leve</option>
+            <option value="Carreto Material pesado">Carreto Material pesado</option>
+            <option value="Bloco grande">Bloco grande</option>
+            <option value="Bloco pequeno">Bloco pequeno</option>
+            <option value="Cimento">Cimento</option>
+            <option value="Chuveiro">Chuveiro</option>
+            <option value="Torneira">Torneira</option>
+            </select>
+         </p>   
      
      <p>
-        <input type="submit" value="Alterar Serviços">   
+        <input type="submit" value="Enviar Solicitação">   
     </p>
     <input value=@Context.Session.GetInt32("IdUsuario") type="hidden">
  </form>

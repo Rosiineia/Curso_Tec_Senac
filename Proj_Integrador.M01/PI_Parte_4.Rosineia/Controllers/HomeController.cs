@@ -20,6 +20,8 @@ namespace PI_Parte_4.Rosineia.Controllers
 
         public IActionResult Index()
         {
+            UsuarioRepository us = new UsuarioRepository();
+            us.TestarConexao();
             return View();
         }
 
