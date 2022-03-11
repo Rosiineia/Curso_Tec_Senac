@@ -59,7 +59,7 @@ namespace PI_Parte_4.Rosineia.Controllers
                 ptr.incluir(p);
                 
                 
-                ViewData["mensagem"]= "Agendamento Realizado";
+                ViewData["mensagem"]= "Solicitação Cadastrada com Sucesso!!";
                 return View();
                 }
             public IActionResult excluir(int Id){

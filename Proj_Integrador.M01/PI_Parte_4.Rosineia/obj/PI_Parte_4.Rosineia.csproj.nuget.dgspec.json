@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj": {}
+    "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj": {}
   },
   "projects": {
-    "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj": {
+    "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj",
+        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj",
         "projectName": "PI_Parte_4.Rosineia",
-        "projectPath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj",
+        "projectPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\PI_Parte_4.Rosineia.csproj",
         "packagesPath": "C:\\Users\\Rosy\\.nuget\\packages\\",
-        "outputPath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\obj\\",
+        "outputPath": "D:\\CURSO TECNICO - SENAC\\Modulo1_Senac\\Proj_Integrador.M01\\PI_Parte_4.Rosineia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rosy\\AppData\\Roaming\\NuGet\\NuGet.Config"

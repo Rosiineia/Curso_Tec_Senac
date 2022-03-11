@@ -100,7 +100,7 @@ namespace PI_Parte_4.Rosineia.Models
             Conexao.Open();
             //preparar Query
 
-            String Query = "UPDATE Usuario SET Nome=@Nome,Login=@Login,Senha=@Senha, WHERE Id=@Id";
+            String Query = "UPDATE Usuario SET Nome=@Nome,Login=@Login,Senha=@Senha WHERE Id=@Id";
             //Preparr o comando
 
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);

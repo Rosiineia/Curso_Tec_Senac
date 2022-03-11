@@ -8,8 +8,9 @@ namespace PI_Parte_4.Rosineia.Models
     public class AgendamentoServicosRepository
     {
          private const string DadosConexao = "Database=LojaPG;Data Source=localhost;User Id=root;";
+        private const string Name = "Servico";
 
-         public List<AgendamentoServicos> Listar()
+        public List<AgendamentoServicos> Listar()
         {
             //abrir conexão
               MySqlConnection Conexao = new MySqlConnection(DadosConexao);    
@@ -38,8 +39,8 @@ namespace PI_Parte_4.Rosineia.Models
                 AgendamentoRealizado.DataSolicitacao  = Reader.GetDateTime("DataSolicitacao");
                 }
 
-                if(!Reader.IsDBNull(Reader.GetOrdinal("Servico "))){
-                AgendamentoRealizado.Servico  = Reader.GetString("Servico ");
+                if(!Reader.IsDBNull(Reader.GetOrdinal("Servico"))){
+                AgendamentoRealizado.Servico  = Reader.GetString(Name);
                 }
                  ListaAgendamentoServicos.Add(AgendamentoRealizado);    
             }
@@ -54,17 +55,16 @@ namespace PI_Parte_4.Rosineia.Models
             Conexao.Open();
             //preparar Query
 
-            String Query = "INSERT INTO AgendamentoServicos (Nome,DataSolicitacao,Servico,Usuario) VALUES( @Nome, @DataSolicitacao, @Servico,@Usuario)";
+            String Query = "INSERT INTO AgendamentoServicos (Id, Nome,DataSolicitacao,Servico, Usuario) VALUES(@Id, @Nome, @DataSolicitacao, @Servico,  @Usuario)";
             //Preparr o comando
 
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);
 
              //Tratar SQL injection
-             
+             Comando.Parameters.AddWithValue("@Id",novaAgenda.Id);
              Comando.Parameters.AddWithValue("@Nome",novaAgenda.Nome);
              Comando.Parameters.AddWithValue("@DataSolicitacao",novaAgenda.DataSolicitacao);
              Comando.Parameters.AddWithValue("@Servico",novaAgenda.Servico);
-            
              Comando.Parameters.AddWithValue("@Usuario",novaAgenda.Usuario);
              //Executr no banco
              Comando.ExecuteNonQuery(); 
@@ -77,7 +77,7 @@ namespace PI_Parte_4.Rosineia.Models
             Conexao.Open();
             //preparar Query
 
-            String Query = "UPDATE AgendamentoServicos SET Nome=@Nome,DataSolicitacao=@DataSolicitacao Servico=@Servico WHERE Id=@Id";
+            String Query = "UPDATE AgendamentoServicos SET Nome=@Nome,DataSolicitacao=@DataSolicitacao, Servico=@Servico WHERE Id=@Id";
             //Preparr o comando
 
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);
@@ -86,6 +86,7 @@ namespace PI_Parte_4.Rosineia.Models
              Comando.Parameters.AddWithValue("@Nome",user.Nome);
              Comando.Parameters.AddWithValue("@DataSolicitacao",user.DataSolicitacao);
              Comando.Parameters.AddWithValue("@Servico",user.Servico);
+             Comando.Parameters.AddWithValue("@Id",user.Id);
              
 
              //Executr no banco
@@ -134,14 +135,13 @@ namespace PI_Parte_4.Rosineia.Models
                     //Tratativa p/ não permitir inserir na lista dados NULL
                 AgendamentoRealizado.Nome = Reader.GetString("Nome");
                 }
-                if(!Reader.IsDBNull(Reader.GetOrdinal("DataSolicitacao "))){
-                AgendamentoRealizado.DataSolicitacao  = Reader.GetDateTime("DataSolicitacao ");
+                /*if(!Reader.IsDBNull(Reader.GetOrdinal("Servico"))){
+                AgendamentoRealizado.Servico  = Reader.GetString("Servico");
                 }
-                if(!Reader.IsDBNull(Reader.GetOrdinal("Servico "))){
-                AgendamentoRealizado.Servico  = Reader.GetString("Servico ");
-                }
+                AgendamentoRealizado.DataSolicitacao  = Reader.GetDateTime("DataSolicitacao ");*/
+                
 
-                }  
+                }
             //fecha conexão
             Conexao.Close();
             //retornar usuario encontrado
