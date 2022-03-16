@@ -55,7 +55,7 @@ namespace PI_Parte_4.Rosineia.Models
             Conexao.Open();
             //preparar Query
 
-            String Query = "INSERT INTO AgendamentoServicos (Id, Nome,DataSolicitacao,Servico, Usuario) VALUES(@Id, @Nome, @DataSolicitacao, @Servico,  @Usuario)";
+            String Query = "INSERT INTO AgendamentoServicos (Id, Nome,DataSolicitacao,Servico) VALUES(@Id, @Nome, @DataSolicitacao, @Servico)";
             //Preparr o comando
 
              MySqlCommand Comando = new MySqlCommand(Query, Conexao);
@@ -65,7 +65,7 @@ namespace PI_Parte_4.Rosineia.Models
              Comando.Parameters.AddWithValue("@Nome",novaAgenda.Nome);
              Comando.Parameters.AddWithValue("@DataSolicitacao",novaAgenda.DataSolicitacao);
              Comando.Parameters.AddWithValue("@Servico",novaAgenda.Servico);
-             Comando.Parameters.AddWithValue("@Usuario",novaAgenda.Usuario);
+             //Comando.Parameters.AddWithValue("@Usuario",novaAgenda.Usuario);
              //Executr no banco
              Comando.ExecuteNonQuery(); 
             //fecha conexão
