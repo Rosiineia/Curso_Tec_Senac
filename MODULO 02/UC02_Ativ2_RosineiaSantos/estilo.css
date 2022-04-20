@@ -1,0 +1,75 @@
+
+/*.direita {
+    /*referencia por classe
+    text-align: right;
+}/
+.centro {
+    text-align: center;
+}
+h2{
+    /*referencia por propiedade h2
+    background-color: blue;
+    text-transform: uppercase;
+}
+.combo1{
+    color:red;
+    font-weight:bold;
+    text-transform:uppercase;
+    /*text-align: center;
+    font-size: 15px;
+}*/
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+  }
+.titulo{
+    color: brown;
+    font-size: xx-large;
+
+}
+.imgprincipal{
+    width: 90%;
+    height: auto;   
+      }
+.submenu{
+    text-align: end;
+    font-size: unset;
+}
+
+.columnA {
+    float: left;
+    width: 14%;
+  }
+  .columnB {
+    float: left;
+    width: 13%;
+  }
+  .cardapio{
+    flex:;
+  }
+  .item1 {
+    float: left;
+    width: 9%;
+  }
+  .item2 {
+    float: left;
+    width: 9%;
+  }
+  .item3 {
+    float: left;
+    width: 9%;
+  }
+  /* Clear floats after the columns 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
