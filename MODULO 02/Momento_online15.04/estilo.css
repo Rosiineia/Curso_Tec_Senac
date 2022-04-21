@@ -4,23 +4,28 @@
 
 
 .banner{
-    margin-left: 30%;
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    /*margin-left: 30%;
+    width: 60%;*/
     height: 100px;
     /*border: 1px solid black;*/
+    margin-top : 30px; ;
 
 }
 .logo{
-    float: left;
+    /*float: left;*/
+    margin-right: 15px;/*podemos fazer alinhamento*/
+    margin-top: 15px;
 
 }
-.titulo{
-    margin-left: 7%;
-
-}
+/*.titulo{
+    /*margin-left: 7%;
+}*/
 .fonteTitulo{
     font-size: 80px;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
+    line-height: 0px;
 
 }
 
@@ -30,18 +35,16 @@
     width: 100%;
     height: 50px;
     border-radius: 10px;
-    /*display: flex;*/
-
-}
-.opcoes{
-    float: left;
+    display: flex;
+    justify-content: space-evenly;
     font-size: 20px;
-    margin-left: 10%;
-    margin-top: 12px;
-    
-
-    
 }
+/*.opcoes{
+    float: left;
+    font-size: 20px; - tmamanho da font
+    margin-left: 10%;
+    margin-top: 12px;    
+}*/
 .formatarlink{
     color: white;
     font-weight: bold;
@@ -50,13 +53,18 @@
 }
 
 .produtos{
-    margin-left: 70px;
-    margin-top: 15px;
+    /*margin-left: 70px;
+    margin-top: 15px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
     
 }
 .conjProdutos{
-    float: left;
-    margin-bottom: 20px;
+    /*float: left;
+    margin-bottom: 20px;*/
     
     
 
@@ -65,7 +73,8 @@
    
     width: 200px;
     height: 200px;
-    margin-right: 55px;
+    /*margin-right: 55px;*/
+    border-radius: 25px;
     
     
 }
@@ -74,6 +83,7 @@
     /*border: 1px solid black;*/
     width: 200px;
     height: 200px;
+    
 }
 button{
     background-color: rgb(151, 144, 148);
@@ -87,7 +97,7 @@ button:hover{
     cursor: pointer;/*muda o cursor*/
 }
 .rodape{
-    margin-left: 30%;
-    
+    display:flex;
+    justify-content: center;
     /*border: 1px solid black;*/
 }
