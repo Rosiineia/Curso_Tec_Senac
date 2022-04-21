@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(169, 211, 197);
+
+}
+.container{
+
+    display: flex;/*coloca os elemetos lado a lado*/
+    /*flex-direction:row ;*/
+    /*flex-direction: column-reverse; - coloca na forma reversa*/
+    /*flex-direction: column; - colcoa em coluna*/
+    /*flex-wrap: wrap; - permite a quebra de tela*/
+    flex-flow: row wrap; /*- posso usar as duas propriedades "row e wrap"*/
+    /*justify-content:center;/*define o alinhamento ao longo do eixo principal*/
+    align-items:center;
+    height: 1000px;/*posso aumetar a area para o align - center funcionar*/
+    align-content:none ;/* define o comportamento padrão de como os itens flexíveis 
+    são dispostos ao longo do eixo cruzado na linha atual*/
+    gap:90px 50px;/* controlo linha e altura nas colunas*/
+    /*row-gap: 50px; * mudo só a linha*/
+    column-gap: none;/*mudo apenas a coluna*/
+}
+
+.padrao{
+    width: 200px;
+    height:200px;
+    border-radius: 200px;/*posso criar um circulo*/
+
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 50px;
+}
