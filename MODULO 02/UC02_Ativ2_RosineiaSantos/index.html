@@ -8,141 +8,151 @@
     <meta name="Rosineia" content="turma:">
     <meta name="keywords" content="HTML, CSS">
     <meta name="description" content="Site de Revisão HTML E CSS">
-    <title>Momento Online 08/04/2022 </title>
+    <title>Momento Online 08/04/22 </title>
     <link rel="stylesheet" href="https://fonts.google.com/css?family=Sofia">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <!--Hbilitando CSS na pagina-->
 </head>
 
 <body>
-    <!-- Cabeçalho-->
-    <header>
-        <!-- Definir cabeçalho e grupo de titulos-->
-        <hgroup>
-            <h1 class="titulo">BIG Pizza Delivery</h1>
-            <div class="submenu">
-                <a href="#">Promoções</a>
-                <a href="#">Bebidas</a>
-                <a href="#">Montar Pizza</a>
-                <a href="#">Cardapio</a>
-            </div>
-             <img  class="imgprincipal" src="Logo.jpg" alt="" width="" height="" />
-        </hgroup>
-    <!--Conteudo-->
-    <main>
-        <header>
-            <h2>COMBOS</h2>
-            <p>Subtitulo</p>
 
-            <nav class="">
-                <div class="">
-                    <div>
-                        <div class="columnA">
-                            <img class="" src="Combo.jpg" alt="" srcset="">
-                            <p class="combo1">Comprando uma pizza familia<br>
-                                Por apenas:
-                                R$ 50<br>
-                                Você ganha uma grande de brinde!!
-                            </p>
+    <header class="banner">
+        <div class="">
+            <h4 class="welcome">Bem Vindo :) Entre ou Cadastre-se</h4>
+            <!--<img class="imagemPrincipal" src="Logo.jpg" width="" height="">-->
+        </div>
+        <div class="titulo">
+            <div class="big">
+                <h3 class="">BIG </h3>
+                <p class="">Pizza</p>
+                <p class="">Delivery</p>
+            </div>
+            <ul class="menu">
+                <li class="opcoes">
+                    <a href="" class="formatarlink">Promoções</a>
+                </li>
+                <li class="opcoes">
+                    <a href="" class="formatarlink">Bebidas</a>
+                </li>
+                <li class="opcoes">
+                    <a href="" class="formatarlink">Montar Pizza</a>
+                </li>
+                <li class="opcoes">
+                    <a href="" class="formatarlink">Cardapio</a>
+                </li>
+            </ul>
+            <nav class="img">
+                <div class="imagemPrincipal"><img class="" dodeantena
+                        src="https://img.cybercook.com.br/receitas/559/pizza-de-presunto-e-mussarela-2-840x480.jpeg?q=75">
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="PAIprodutos">
+            <div class="conjesquerda">
+                <a href="#">
+                    <img src="Combo.jpg" class="imagens" alt="Combo1">
+                </a>
+                <div class="descricaoProduto">
+                    <h3 class="title_C1">COMBOS</h3>
+                    <h4>Comprando uma pizza familia</h4>
+                    <p>Você ganha uma grande de brinde!!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+                <div class="conjesquerda">
+                    <a href="#">
+                        <img src="Combo.jpg" class="imagens" alt="Combo3">
+                    </a>
+                    <div class="descricaoProduto">
+                        <h3 class="title_C2">COMBOS</h3>
+                        <h4>Comprando uma pizza familia</h4>
+                        <p>Você ganha uma grande de brinde!!</p>
+                        <button>Comprar</button>
+                    </div>
+                    </div>
+                    <div class="conjdireita">
+                        <a href="#">
+                            <img src="Pizza.jpg" class="imagens" alt="BrinqMadeira">
+                        </a>
+                        <div class="descricaoProduto">
+                            <h3 class="title_P1">Pizza Familia</h3>
+                            <h4>Sabores:</h4>
+                            <p>Atum
+                                Bacon
+                                Lombinho
+                                4 Queijos</p>
+                            <button>Comprar</button>
                         </div>
-                                <div class="columnA">
-                                    <img class="" src="Combo.jpg" alt="" srcset="">
-                                    <p class="combo1">Comprando uma pizza Grande<br>
-                                        Por apenas:
-                                        R$ 50<br>
-                                        Você ganha uma grande de brinde!!
-                                    </p>
+                        <div class="conjdireita">
+                            <a href="#">
+                                <img src="Pizza.jpg" class="imagens" alt="BrinqMadeira">
+                            </a>
+                            <div class="descricaoProduto">
+                                <h3 class="title_P2">Pizza Grande</h3>
+                                <h4>Sabores:</h4>
+                                <p>Atum
+                                    Bacon
+                                    Lombinho
+                                    4 Queijos</p>
+                                <button>Comprar</button>
                             </div>
-                </div>  
-                <div class="cardapio"> 
-                        <div class="">
-                            <div class="item1">
-                                <img class="" src="Pizza.jpg" alt="" srcset="">
-                                <p>Pizza Média<br>
-                                Sabores:
-                                Atum
-                                Bacon
-                                Lombinho
-                                4 Queijos
-                                <br></p>
+                            <div class="conjdireita">
+                                <a href="#">
+                                    <img src="Pizza.jpg" class="imagens" alt="BrinqMadeira">
+                                </a>
+                                <div class="descricaoProduto">
+                                    <h3 class="title_P3">Pizza Média</h3>
+                                    <h4>Sabores:</h4>
+                                    <p>Atum
+                                        Bacon
+                                        Lombinho
+                                        4 Queijos</p>
+                                    <button>Comprar</button>
+                                </div>
+                            </div>
+                        </main>
+                        <div class="formulario">
+                            <form>
+                                <h2>Delivery</h2>
+                                <P>Insira o CEP e encontre a loja mais próxima</P>
+                                <label for="fcep">CEP:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <input type="submit" value="Buscar"><br>
+                                <label for="fnumero">Numero da casa:</label><br>
+                                <input type="text" id="lname" name="lname">
+                            </form>
                         </div>
-                    </div>
-                    <div class="c">
-                    <div class="">
-                        <div class="item2">
-                            <img class="" src="Pizza.jpg" alt="" srcset="">
-                            <p>Pizza Grande<br>
-                                Sabores:
-                                Atum
-                                Bacon
-                                Lombinho
-                                4 Queijos
-                                <br></p>
+                        <div class="pedidos">
+                            <form>
+                                <h2>Pedido expresso</h2>
+
+                                <label for="fcep">Nome:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="fendereco">Endereço:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="ftelefon">Telefone:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="ftamanho">Tamanho/Sabor:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="fpagamento">Forma de Pagamento:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <input type="submit" value="Enviar"><br>
+                            </form>
                         </div>
-                    </div>
-                    </div>
-                    <div class="c">
-                    <div class="">
-                        <div class="item3">
-                            <img class="" src="Pizza.jpg" alt="" srcset="">
-                            <p>Pizza Familia<br>
-                                Sabores:
-                                Atum
-                                Bacon
-                                Lombinho
-                                4 Queijos
-                                <br>
-                            </p>
-                        </div>
-                    </div>
+                        <section>
+                            <h2>Destaques</h2>
+                            <p>Cont. seção2</p>
+                        </section>
+                        <section>Novidades
+                            <p>Cont.seção3</p>
+                        </section>
                     </div>
                 </div>
-            </nav>
-            <!--<footer>
-             <p>Postado por....</p>
-             <time datetime>data da psotagem"</time>
-         </footer>-->
-        </header>
-    </main>
-    <br>
-    <!--Sidebar com relação ao artigo-->
-    <aside>
-        <section>
-            <form>
-                <h2>Delivery</h2>
-                <P>Insira o CEP e encontre a loja mais próxima</P>
-                <label for="fcep">CEP:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <input type="submit" value="Buscar"><br>
-                <label for="fnumero">Numero da casa:</label><br>
-                <input type="text" id="lname" name="lname">
-            </form>
-        </section>
-        <form>
-            <h2>Pedido expresso</h2>
-
-            <label for="fcep">Nome:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="fendereco">Endereço:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="ftelefon">Telefone:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="ftamanho">Tamanho/Sabor:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="fpagamento">Forma de Pagamento:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <input type="submit" value="Enviar"><br>
-        </form>
-        <section>
-            <h2>Destaques</h2>
-            <p>Cont. seção2</p>
-        </section>
-        <section>Novidades
-            <p>Cont.seção3</p>
-        </section>
-    </aside>
-    </header>
-    <footer>Rodapé</footer>
-</body>
-
+                <footer>
+                    <span class="rodape">Todos os Direitos Reservados. @Copyrith</span>
+                </footer>
+            </body>
 </html>
