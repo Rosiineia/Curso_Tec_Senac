@@ -45,8 +45,14 @@ body {
     height: 150px;
     padding: 15px 27px;
     background-color: rgb(228, 15, 15);
-    
+    font-size: 30px;
+}
+.pizza{
+    font-size: 29px;
 
+}
+.deliveri{
+    font-size: 23px;
 
 }
 
@@ -58,16 +64,15 @@ body {
 
    
     list-style: none;
-
-
-
 }
 
 .menu {
     padding: 0px;
     margin: 0px;
-    border: 2px solid rgb(25, 233, 163);
     display: flex;
+    color: rgb(209 18 18);
+    text-align: end;
+    font-size: 23px;
 }
 ul a{
     display: block;
@@ -94,90 +99,53 @@ ul a{
     /*retirar linhado link*/
 
 }
-
-.PAIprodutos {
-  
-   
+.flex{
     display: flex;
-    margin-top: 36px;
-    justify-content: space-between;
-    padding: 10px;
-    
-
-}
-
-.conjesquerda {
-    display: flex;
-    /* justify-content: space-around; */
-    flex: 30%;
-    background-color: #83a6e0;
-    padding: 10px;
-    height: 244px;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.conjdireita{
-    flex: 70%;
-    background-color: #f3a4cb;
-    padding: 22px;
-    /* justify-content: space-around; */
-    /* height: 210px; */
-    /* flex-direction: column-reverse; */
-    /* justify-content: unset; */
-    /* flex-wrap: unset; */
-    display: flex;
-}
 
-.pedidos{
+
+.produtos{
+    /*margin-left: 70px;
+    margin-top: 15px;*/
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0px;
-    background-color: #aba4f3;
-    justify-content: end;
- 
+    margin-top: 30px;
+
     
 }
-.imagens {
-
+.conjProdutos{
+    /*float: left;
+    margin-bottom: 20px;*/
+    }
+.bebidas{
+    
+}
+h1{
+    padding: 8px;
+    border: 0px solid #161515;
+    color: rgb(209 18 18);
+    text-align: center;
+    background-color: black;
+    border-radius: 24px;
+    font-size: 30px;
+}
+.imagens{
+   
     width: 200px;
     height: 200px;
     /*margin-right: 55px;*/
     border-radius: 25px;
-
     
     
-        
-      }
-
-.descricaoProduto {
+}
+.descricaoProduto{
     text-align: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 200px;
-
-}
-.title_C1{
-    font-size: 18px;
-
-}
-.title_C2{
-    font-size: 18px;
-}
-.title_P1{
-    font-size: 18px;
-}
-.title_P2{
-    font-size: 18px;
-}
-.title_P3{
-        font-size: 18px;
-
-}
-h4{
-    font-size: 15px;
-}
-p{
-   font-size: 13px    
+    height: 200px;
+    
 }
 .formulario{
     display: flex;
@@ -186,9 +154,19 @@ p{
     padding: 0px;
     background-color: #aba4f3;
     justify-content: end;
+}
     
+.pedidos{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    padding: 7px;
+    background-color: #ff9800;
+    justify-content: end;
+    margin: 0px;
 
 }
+
 button {
     background-color: rgb(151, 144, 148);
     border: none;
@@ -198,7 +176,7 @@ button {
 }
 
 button:hover {
-    background-color: palevioletred;
+    background-color: rgb(248, 182, 204);
     /*muda a cor do botão ao colocr o maouse*/
     cursor: pointer;
     /*muda o cursor*/
