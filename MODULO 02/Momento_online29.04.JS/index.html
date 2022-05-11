@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Rosineia" content="turma:">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Site de Revisão HTML E CSS">
+    <title>Momento Online 29/04/2022- HTML,CSS e JS </title>
+    <link rel="stylesheet" href="https://fonts.google.com/css?family=Sofia">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!--Hbilitando CSS na pagina-->
+</head>
+
+<body onload= "alert('Bem Vindo!!')"><!--Onload = evento; alert= uma função para executar algo-->
+    <!--Header-->
+    <div class="header">
+        <h1>Pet Shop Melhor Amigo</h1>
+        <p>Cuidamos<strong> do seu PET com</strong> Carinho</p>
+    </div>
+    <!--Mneunde navegação-->
+    <div class="navbar">
+        <a href="#" class="">Cachorro</a>
+        <a href="#" class="">Gatos</a>
+        <a href="#" class="">Passaros</a>
+        <a href="#" class="">Peixes</a>
+        <a href="#" class="">Promoções</a>
+        <a href="#" class="">Fale Conosco</a>
+    </div>
+    <!--Corpo do site-->
+    <div class="main">
+        <div class="esquerda">
+            <h2>Venha nos Conhecer</h2>
+            <h5>Localização</h5>
+            <div class="imgfake" style="height:120px">Imagem</div>
+            <p>Rua xxx,258 - Salvador - Ba</p>
+            <h3>Mais Infomrmações</h3>
+            <p>Contamos com varias opções</p>
+            <div class="imgfake" style="height:60px">Sobre o Pet Shop Melhor Amigo</div><br>
+            <div class="imgfake" style="height:60px">Central do Cliente</div><br>
+            <div class="imgfake" style="height:60px">Trabalhe Conosco</div>
+    </div>
+        <div class="direita">
+            <div>
+                <h2>Nossos Serviços</h2>
+                <h5>Banho e Tosa - Unidade Veterinaria - Farmacia</h5>
+                <div class="imgfake" style="height:120px">Imagem</div>
+                <p>Com uma equipe especializada e comprometida para seu pet</p>
+                <br>
+                <h2>Agendamento</h2>
+                <h5>Agende aqui de modo rapido</h5>
+                <form action="" method="POST" onsubmit="return valida_formulario(this);"><!--Onsubmit= evento para chamar o JS-->
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <span class="msg_css_erro msg_js_nome"></span><!--será utilizado mesmo campo para CSS e JS (FORMA DE MOSTRAR MSG ABAIXO DO CAMPO DO FORMULARIO)-->
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email">
+                <label for="idade">Idade do Pet</label>
+                <input type="text" name="idade" id="idade">
+                <label for="mensagem">Mensagem</label>
+                <input type="text" name="mensagem" id="mensagem">
+                <input type="submit" value="Enviar" class="botao">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--Rodapé do site-->
+    <div class="footer">
+        <h5>Todos os Direitos Reservados. @Copyrith</h5>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+
+</body>
+
+</html>
