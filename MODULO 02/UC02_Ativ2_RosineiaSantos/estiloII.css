@@ -9,11 +9,6 @@ body {
     background-color: #c51b1b0d;
 }
 
-/*.banner{
-    display: flex;
-    
-}*/
-
 .welcome {
     padding: 8px;
     border: 2px solid black;
@@ -21,11 +16,7 @@ body {
     text-align: end;
     background-color: black;
 }
-/*.img{
-    display: flex;
-    height: 670px;
-    width: 1280px;
-}*/
+
 .imagemPrincipal {
     background-position: center;
     background-size: cover;
@@ -56,9 +47,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding: 0px;
-    display: table;
-
-   
+    display: table;   
     list-style: none;
 }
 
@@ -78,14 +67,10 @@ ul a{
     
 }
 
-
 .opcoes {
     display: flex;
     text-decoration: none;
     padding: 5px;
-
-
-
 }
 
 .formatarlink {
@@ -100,24 +85,15 @@ ul a{
     flex-wrap: wrap;
 }
 
-
 .produtos{
     /*margin-left: 70px;
     margin-top: 15px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 30px;    
+}
 
-    
-}
-.conjProdutos{
-    /*float: left;
-    margin-bottom: 20px;*/
-    }
-.bebidas{
-    
-}
 h1{
     padding: 8px;
     border: 0px solid #161515;
@@ -134,23 +110,14 @@ h1{
     /*margin-right: 55px;*/
     border-radius: 25px;
     
-    
 }
 .descricaoProduto{
     text-align: center;
     /*border: 1px solid black;*/
     width: 200px;
-    height: 200px;
-    
+    height: 200px;    
 }
 .formulario{
-    /*display: flex;
-    /* flex-wrap: wrap; 
-    justify-content: space-evenly;
-    padding: 0px;
-    background-color: #aba4f3;
-    justify-content: end;*/
-
     padding: 8px;
     border: 0px solid #161515;
     color: rgb(32 31 31);
@@ -161,14 +128,6 @@ h1{
 }
     
 .pedidos{
-    /*display: flex;
-    /* flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 7px;
-    background-color: #ff9800;
-    justify-content: end;
-    margin: 0px;*/
-
     padding: 8px;
     border: 0px solid #161515;
     color: rgb(32 31 31);
@@ -205,4 +164,31 @@ button:hover {
     display: flex;
     justify-content: center;
     /*border: 1px solid black;*/
+}
+/*FRONT END*/
+.css_erro{
+    color:rgb(221, 22, 55);
+    font-size: 12px;
+   
+}
+.end_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
+}
+.tel_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
+}
+.tam_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+    
+
+}
+.pag_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
 }

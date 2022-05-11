@@ -9,10 +9,6 @@ body {
     background-color: #c51b1b0d;
 }
 
-/*.banner{
-    display: flex;
-    
-}*/
 
 .welcome {
     padding: 8px;
@@ -21,11 +17,7 @@ body {
     text-align: end;
     background-color: black;
 }
-/*.img{
-    display: flex;
-    height: 670px;
-    width: 1280px;
-}*/
+
 .imagemPrincipal {
     background-position: center;
     background-size: cover;
@@ -144,13 +136,6 @@ h1{
     
 }
 .formulario{
-    /*display: flex;
-    /* flex-wrap: wrap; 
-    justify-content: space-evenly;
-    padding: 0px;
-    background-color: #aba4f3;
-    justify-content: end;*/
-
     padding: 8px;
     border: 0px solid #161515;
     color: rgb(32 31 31);
@@ -161,14 +146,6 @@ h1{
 }
     
 .pedidos{
-    /*display: flex;
-    /* flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 7px;
-    background-color: #ff9800;
-    justify-content: end;
-    margin: 0px;*/
-
     padding: 8px;
     border: 0px solid #161515;
     color: rgb(32 31 31);
@@ -205,4 +182,37 @@ button:hover {
     display: flex;
     justify-content: center;
     /*border: 1px solid black;*/
+}
+/*FRONT END*/
+.css_erro{
+    color:rgb(221, 22, 55);
+    font-size: 12px;
+   
+    
+}
+.end_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
+}
+.tel_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
+}
+.tam_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+    
+
+}
+.pag_erro_css{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
+}
+.css_erro_cep{
+    color:rgb(170, 19, 44);
+    font-size: 12px;
+
 }
