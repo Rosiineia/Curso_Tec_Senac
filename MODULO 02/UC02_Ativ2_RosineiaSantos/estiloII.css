@@ -85,15 +85,72 @@ ul a{
     flex-wrap: wrap;
 }
 
-.produtos{
+/*.produtos{
     /*margin-left: 70px;
     margin-top: 15px;*/
-    display: flex;
+    /*display: none;*/
+
+    /*flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-top: 30px; */
+    /*max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}*/
+.conjProdutos{
+    padding: 2px;
+     /*margin-left: 70px;
+    margin-top: 15px;*/
+    /*display: none;*/
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 30px;    
+    /* margin-top: 30px; */
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+
 }
 
+.prev, .next{
+    position: absolute;
+    top: 110%;
+    width: auto;
+    padding: 16px;
+    color:rgb(240, 21, 21);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+}
+.prev:hover, .next:hover{
+    background-color: rgb(126, 122, 122);
+}
+.next{
+     right: 0;
+     border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.pontos_carousel{
+    text-align: center;
+}
+.ponto{
+    width: 12px;
+    height: 11px;
+    margin: 0 2px;
+    display: inline-block;
+    background-color: #c71d1d;
+    border-radius: 50%;
+    cursor: -webkit-grab;
+    transition: background-color 0.6s ease;
+
+}
 h1{
     padding: 8px;
     border: 0px solid #161515;
