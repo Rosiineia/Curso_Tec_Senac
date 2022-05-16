@@ -1,0 +1,28 @@
+CREATE DATABASE LojaPG;
+
+CREATE TABLE Usuario(
+    Id int (11) AUTO_INCREMENT,
+    Nome varchar(200),
+    Login varchar(30),
+    Senha varchar(30),
+    PRIMARY KEY(Id));
+
+
+INSERT INTO Usuario(Nome, Login, Senha) VALUES ('Angela Souza','Asouza','2589');
+INSERT INTO Usuario(Nome, Login, Senha) VALUES ('Marcelo Jesus','MJesus','1234');
+INSERT INTO Usuario(Nome, Login, Senha) VALUES ('Josefa Martins','MJosefa','4321');
+INSERT INTO Usuario(Nome, Login, Senha) VALUES ('Mateo Alves','Malves','4567');
+
+
+CREATE TABLE AgendamentoServicos(
+    Id int (11)AUTO_INCREMENT,
+    Nome varchar(30),
+    DataSolicitacao datetime,
+    Servico varchar(200),
+    Usuario int(4),
+    PRIMARY KEY(Id),
+    FOREIGN KEY (Id) REFERENCES Usuario(Id));
+
+
+
+

@@ -1,0 +1,34 @@
+CREATE DATABASE Turismo;
+
+CREATE TABLE Usuario(
+    Id int (11) AUTO_INCREMENT,
+    Nome varchar(200),
+    Login varchar(30),
+    Senha varchar(30)    ,
+    DataNascimento datetime,
+    PRIMARY KEY(Id)
+    );
+
+CREATE TABLE PacotesTuristicos(
+    Id int (11)AUTO_INCREMENT,
+    Nome varchar(30),
+    Origem varchar (300),
+    Destino varchar(30),
+    Atrativos varchar (30),
+    Saida datetime,
+    Retorno datetime,
+    Usuario int(4),
+    PRIMARY KEY(Id),
+    FOREIGN KEY (Id) REFERENCES Usuario(Id)
+);
+
+INSERT INTO Usuario(Nome, Login, Senha, DataNascimento) VALUES ('Maria Silva','MSilva','2569','25-02-1984');
+INSERT INTO Usuario(Nome, Login, Senha, DataNascimento) VALUES ('Paula Santos','PSantos','2358','02-02-1988');
+INSERT INTO Usuario(Nome, Login, Senha, DataNascimento) VALUES ('Ana Martins','MAna','9631','05-03-1999');
+INSERT INTO Usuario(Nome, Login, Senha, DataNascimento) VALUES ('Clara Borges','CLborges','8923','10-06-1993');
+INSERT INTO Usuario(Nome, Login, Senha, DataNascimento) VALUES ('Vera Souza','Vsouza','123','22-03-1990')
+
+
+
+
+
