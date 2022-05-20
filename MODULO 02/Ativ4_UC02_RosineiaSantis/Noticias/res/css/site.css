@@ -3,8 +3,8 @@ html{
     color: #3c3c3c import !important;
 }
 .borda{
-    border:1px solid black;
-   /* border: none;*/
+    
+   border: none;
 }
 
 header
@@ -20,9 +20,7 @@ header
     display: flex;
     align-items: start;
 }
-.outrasNotic{
-    
-}
+
 a{
     text-decoration: none;
     color: inherit !important;
@@ -42,7 +40,7 @@ a:hover{
 }
 
 .secao-extra{
-    border:1px solid #3c3c3c;
+    /*border:1px solid #3c3c3c;*/
     padding: 1em;
     margin-bottom:1em;
     justify-content:flex-end;
