@@ -20,12 +20,7 @@ function valida_formulario(form){
         nome.focus();
         return false;
     }
-    if(invalid.test(nome.value)==false){/*Segunda  validação com "expressão regular"*/
-        alert("Nome incorreto")
-        nome.focus();
-        return false;
-    }
-
+    
     var caixa_email= document.querySelector('.msg_js_email');
     caixa_email.style.display='none'/* NÃO mostar FRASE:'Favor colocar nome completo'*/
 
@@ -36,9 +31,5 @@ function valida_formulario(form){
         email.focus();
         return false;
     }
-    if(invalid.test(email.value)==false){/*Segunda  validação com "expressão regular"*/
-        alert("Email incorreto")
-        email.focus();
-        return false;
-    }
+    
 }

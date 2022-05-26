@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Part05\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj": {}
+    "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj": {}
   },
   "projects": {
-    "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Part05\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj": {
+    "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Part05\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj",
+        "projectUniqueName": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj",
         "projectName": "UC_5Rosineia_Ativ3",
-        "projectPath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Part05\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj",
+        "projectPath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Parte_5.Rosineia\\UC_5Rosineia_Ativ3.csproj",
         "packagesPath": "C:\\Users\\Rosy\\.nuget\\packages\\",
-        "outputPath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Part05\\PI_Parte_5.Rosineia\\obj\\",
+        "outputPath": "D:\\CURSO TECNICO - SENAC\\Proj_Integrador.M02\\PI_Parte_5.Rosineia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rosy\\AppData\\Roaming\\NuGet\\NuGet.Config"
