@@ -1,0 +1,61 @@
+@model Agendamento
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>PG Materiais de Construção</title>
+</head>
+
+<body>
+  <header>
+
+    <h1>PG Materiais de Construção</h1>
+
+  </header>
+  <div>
+    <main>
+      <h3>Faça sua seu pedido/serviço</h3>
+      <br>
+      <p>Preencher os dados abaixo</p>
+
+      <form method="POST" asp-controller="Home" asp-action="Listagem">
+        <p>
+          <label asp-for="nome"> Nome: </label>
+          <input asp-for="nome">
+        </p><br>
+        <p>
+          <label asp-for="telefone"> Telefone: </label>
+          <input asp-for="telefone">
+        </p>
+        <p>
+          <label asp-for="data">Data da Solicitação : </label>
+          <input type="date" name="" asp-for="data" required>
+        </p>
+        <br>
+        <p>
+          <label asp-for="Serviço">Selecionar Serviço/Material : </label>
+          <select asp-for="Serviço" required>
+            <option value="Carreto Material leve">Material leve</option>
+            <option value="Carreto Material pesado">Carreto Material pesado</option>
+            <option value="Bloco grande">Bloco grande</option>
+            <option value="Bloco pequeno">Bloco pequeno</option>
+            <option value="Cimento">Cimento</option>
+            <option value="Chuveiro">Chuveiro</option>
+            <option value="Torneira">Torneira</option>
+          </select>
+        </p>
+        <p>
+          <label asp-for="Descrição">Descrever quantidade do produto/serviço : </label>
+        </p>
+        <textarea asp-for="Descrição" name="Descrição" cols="40" rows="15"
+          required>Descrever quantidade do produto/serviço : </textarea><br>
+          <input type="submit" value="Enviar Solicitação">
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
