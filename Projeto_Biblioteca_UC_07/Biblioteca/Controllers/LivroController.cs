@@ -1,5 +1,6 @@
-using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
+
+using Biblioteca.Models;
 
 namespace Biblioteca.Controllers
 {
@@ -54,5 +55,26 @@ namespace Biblioteca.Controllers
             Livro l = ls.ObterPorId(id);
             return View(l);
         }
+
+        /*public IActionResult excluirlivros(string id) {
+            return View(new LivroService().ListarTodos(id));    
+        }
+        
+        [HttpPost]
+        public IActionResult excluirlivros(string decisao)
+        {
+            
+            if(decisao=="EXCLUIR")
+            {
+                ViewData["Mensagem"] = "Exclusão de Livro Cadastrado "+ new LivroService().ListarTodos(id).Autor + "realizada com sucesso";                
+                new LivroService().excluirCadLivros(id);
+                return View("ListadeLivros",new LivroService().ListarTodos());
+            }
+            else
+            {
+                ViewData["Mensagem"] = "Exclusão cancelada";
+                return View("ListadeLivros",new LivroService().ListarTodos());
+            }
+        }*/
     }
 }
