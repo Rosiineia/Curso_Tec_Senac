@@ -4,53 +4,180 @@
 }
 
 <div class="container" style="margin-top:10px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>Iniciativa Saúde da Cidade</h2>
-      <p>Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
-    </p>
-    <p>Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
-    </p>
-      <div "nav nav-pills flex-column">
-    <h2>Entre em contato!:</h2>
-    <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Iniciativa Saúde da Cidade</h2>
+            <p>Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae
+                hendrerit.
+            </p>
+            <p>Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae
+                hendrerit.
+            </p>
+            <div "nav nav-pills flex-column" id="areaContato">
+                <h2>Entre em contato!:</h2>
+                <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
 
-    <form action="/Home/Cadastrar" method="POST">
-        <div class="form-group col-4">
-            <label asp-for="Nome">Nome:</label>
-            <input asp-for="Nome" />
+
+                <form action="" method="POST" id="formCadastro">
+                    <div class="form-group col-4">
+                        <label asp-for="Nome">Nome:</label>
+                        <input asp-for="Nome" required id="nome" />
+                    </div>
+                    <div class="form-group col-4">
+                        <label asp-for="Email">Email:</label>
+                        <input asp-for="Email" required id="email" />
+                    </div>
+                    <div class="form-group col-4">
+                        <label asp-for="Mensagem">Mensagem:</label>
+                        <textarea asp-for="Mensagem" placeholder="Mensagem opcional" id="mensagem"></textarea>
+                    </div>
+                    <div class=" form-group col 4 mt-1">                        
+                    </div>
+                     <button type="button" class="btn btn-outline-success  " data-toggle="modal"
+                        data-target="#exampleModal4">
+                        Clique aqui para acessar o formulario 
+                    </button>        
+                </form>
+            </div>
         </div>
-        <div class="form-group col-4">
-            <label asp-for="Email">Email:</label>
-            <input asp-for="Email"/>
-        </div>
-        <div class="form-group col-4" >
-            <label asp-for="Mensagem">Mensagem:</label>
-            <textarea asp-for="Mensagem" placeholder="Mensagem opcional"></textarea>          
-        </div>
-        <div class="mt-4">
-            <input type="submit" value="Enviar" />
-        </div>
-    </form>
-    </div>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      
-      <img class="img-fluid" src="img1.jpg" alt="Chania" width="700" height="345">        
-      
-      <div class="row display-flex mt-5">
-      <div class="col-4 ">
-        <img class="img-fluid " src="img2.jpg" alt="Chania" width="260" height="145">
-      <a href="#">Agenda de eventos</a>      
+        <div class="col-sm-8">
+            <img class="img-fluid" src="img1.jpg" alt="Chania" width="700" height="345">
+
+            <div class="row display-flex mt-5">
+                <div class="col-4 ">
+                    <img class="img-fluid " src="img2.jpg" alt="Chania" width="260" height="145">
+                    
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Agenda de eventos</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusamus id quasi aliquid possimus.
+                                    Molestiae modi, ipsa cupiditate sed ratione, praesentium
+                                    laborum ut numquam, omnis ipsam eius ex quasi doloremque? Nulla?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid" src="img4.jpg" alt="Chania" width="260" height="145">
+                    <!--<a href="#">Dicas de vida saudável</a>-->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Vida de Forma Saudavel</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusamus id quasi aliquid possimus.
+                                    Molestiae modi, ipsa cupiditate sed ratione, praesentium
+                                    laborum ut numquam, omnis ipsam eius ex quasi doloremque? Nulla?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid " src="img3.jpg" alt="Chania" width="260" height="145">
+                    <!-- Modal 3-->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Apoiadores</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Accusamus id quasi aliquid possimus.
+                                    Molestiae modi, ipsa cupiditate sed ratione, praesentium
+                                    laborum ut numquam, omnis ipsam eius ex quasi doloremque? Nulla?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Botoes modal -->
+                
+                    <button type="button" class="btn btn-outline-success col-4 mt-2" data-toggle="modal"
+                        data-target="#exampleModal1">
+                        Agenda de eventos
+                    </button>
+                    <button type="button" class="btn btn-outline-success col-4 mt-2 " data-toggle="modal"
+                        data-target="#exampleModal2">
+                        Dicas de vida saudável
+                    </button>
+                    <button type="button" class="btn btn-outline-success col-4 mt-2 " data-toggle="modal"
+                        data-target="#exampleModal3">
+                        Apoiadores
+                    </button>
+                            
+            </div>
+            <!-- Modal enviar-->
+
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Formulario </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="col-4">
-        <img class="img-fluid" src="img4.jpg" alt="Chania" width="260" height="145">
-        <a href="#">Dicas de vida saudável</a>      
+      <div class="modal-body">
+        <form action="" method="POST" id="formCadastro">
+                    <div class="form-group col-4">
+                        <label asp-for="Nome">Nome:</label>
+                        <input asp-for="Nome" required id="nome" />
+                    </div>
+                    <div class="form-group col-4">
+                        <label asp-for="Email">Email:</label>
+                        <input asp-for="Email" required id="email" />
+                    </div>
+                    <div class="form-group col-4">
+                        <label asp-for="Mensagem">Mensagem:</label>
+                        <textarea asp-for="Mensagem" placeholder="Mensagem opcional" id="mensagem"></textarea>
+                    </div>
+                    <div class=" form-group col 4 mt-1">
+                        <input type="submit" name="cadUser" id="cadUser" value="Enviar" id="btnSubmit"
+                            class="btn btn-outline-success" />
+                    </div>
+        </form>        
       </div>
-      <div class="col-4">
-        <img class="img-fluid " src="img3.jpg" alt="Chania" width="260" height="145">
-      <a href="#">Apoiadores</a>      
-      </div>    
-    </div>  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>        
+      </div>
+    </div>
+  </div>
 </div>
+        </div>

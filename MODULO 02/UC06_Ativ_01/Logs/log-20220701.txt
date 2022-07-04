@@ -1,0 +1,1 @@
+2022-07-01T15:21:37.2453126-03:00  [INF] Application is shutting down... (90f52c38)
