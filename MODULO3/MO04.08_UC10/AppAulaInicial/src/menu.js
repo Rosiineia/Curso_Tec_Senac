@@ -28,16 +28,17 @@ const estilo = StyleSheet.create({
     alignItems:'center',
     justifyContent:'center',
     margin:10,
-    backgroundColor:'lightblue'    
+    backgroundColor:'lightblue',
+    borderRadius:10  
   },
   imagem:{
-    height:55,
-    width:55
+    height:50,
+    width:50
   },
   texto1:{
     fontSize:15,
     color: 'red',
     fontWeight:'bold',
-    margin:20
+    margin:10,
   }
 })

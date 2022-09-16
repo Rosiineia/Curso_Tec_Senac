@@ -15,12 +15,21 @@ export default class App extends Component {
   render(){
     return(
       <View>
-        <Menu/>
+      
+      <ScrollView>
+      <Menu/>
+      <View>       
         <Produtos
+        nomeImagem= {require('./src/Img_Groot.jpeg')}
         descricao="Groot"
-        preco ={ 250}/>
-        
+        preco ={ 225}/>
+        <Produtos
+        nomeImagem= {require('./src/Img_ioda.jpg')}
+        descricao="Yoda"
+        preco ={ 175}/>                 
       </View>
+      </ScrollView>
+      </View>    
     )
   }
 }
@@ -33,8 +42,8 @@ const estilo = StyleSheet.create({
     backgroundColor:'lightblue'    
   },
   imagem:{
-    height:55,
-    width:55
+    height:30,
+    width:30
   },
   texto1:{
     fontSize:15,
@@ -42,12 +51,4 @@ const estilo = StyleSheet.create({
     fontWeight:'bold',
     margin:20
   },
-  texto2:{
-    fontSize:15,
-    color: 'black',
-    fontWeight:'bold',
-    margin:1,
-    textAlign:'left'
-    
-  }
 })
